@@ -11,7 +11,7 @@ const spaceGrotesk = Space_Grotesk({
 
 
 export const metadata: Metadata = {
-  title: ' ScrapeSavings',
+  title: ' WebCrawlerMart',
   description: 'Navigate E-commerce price waves and save money effortlessly on your e-shopping ',
 }
 
