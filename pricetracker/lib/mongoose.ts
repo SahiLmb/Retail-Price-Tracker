@@ -19,4 +19,8 @@ export const connectToDB = async() => {
     } catch (error) {
         console.log(error)
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5080735f72156443fccd3ae7428b9e7e3dbc0dd9
