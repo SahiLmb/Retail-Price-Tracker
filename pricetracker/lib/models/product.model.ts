@@ -7,6 +7,8 @@ const productSchema = new mongoose.Schema({
     title: { type: String, required: true},
     currentPrice: { type: Number, required: true},
     originalPrice: { type: Number, required: true},
+    // to avoid repeatation of products
+    
     priceHistory: [
         {
             price: { type: Number, required: true},
