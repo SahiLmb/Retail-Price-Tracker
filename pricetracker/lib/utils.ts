@@ -117,8 +117,5 @@ export const formatNumber = (num: number = 0) => {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0,
   });
-<<<<<<< HEAD
 }; 
-=======
-}; 
->>>>>>> 5080735f72156443fccd3ae7428b9e7e3dbc0dd9
+
