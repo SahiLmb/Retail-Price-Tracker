@@ -1,7 +1,9 @@
 // used to fetch the product from it's id on the website
 
+import Modal from "@/components/Modal";
 import PriceInfoCard from "@/components/PriceInfoCard";
-import { getProductById } from "@/lib/actions"
+import ProductCard from "@/components/ProductCard";
+import { getProductById, getSimilarProducts } from "@/lib/actions"
 import { formatNumber } from "@/lib/utils";
 import { Product } from "@/types";
 import Image from "next/image";
@@ -17,6 +19,8 @@ const ProductDetails = async ({ params : { id } }: Props) => {
   const product: Product = await getProductById(id);
   
   if(!product) redirect('/')
+
+  const similarProducts = await getSimilarProducts(id);
 
   return (
     // Contains the product image
@@ -140,24 +144,24 @@ const ProductDetails = async ({ params : { id } }: Props) => {
             />
 
             <PriceInfoCard
-              title="Current Price"
+              title="Highest Price"
               iconSrc="/assets/icons/arrow-up.svg"
               value={`${product.currency} ${formatNumber(product.highestPrice)}`}
             />
 
             <PriceInfoCard
-              title="Current Price"
+              title="Lowest Price"
               iconSrc="/assets/icons/arrow-down.svg"
               value={`${product.currency} ${formatNumber(product.lowestPrice)}`}
             />
           </div>
         </div>
 
-        Modal
+        <Modal productId={id} />
         </div>
         </div>
         {/* Product and Description */}
-        <div className="flex flex-col gap-16 border-2 border-red-500">
+        <div className="flex flex-col gap-16">
           <div className="flex flex-col gap-5">
             <h3 className="text-2xl text-secondary font-semibold">
               Description of Product
@@ -179,12 +183,29 @@ const ProductDetails = async ({ params : { id } }: Props) => {
             width={22}
             height={22}
             />
-
-            <Link href="/" className="text-base text-white">
-             Buy now
+            <Link
+              href={product.url}
+              target="_blank" // to open in new tab
+              className="text-base text-white"
+            >
+            Buy now
             </Link>
             </button>
         </div>
+
+        {similarProducts && similarProducts?.length > 0 && (
+          <div className="py-14 flex flex-col gap-2 w-full">
+            <p className="section-text">Similar Products</p>
+
+            <div className="flex flex-wrap gap-10 mt-7 w-full"> 
+              {similarProducts.map((product) => (
+                // Importing ProductCard component here
+                <ProductCard key={product._id} product={product} />
+              ))}
+              </div>
+            </div>
+        )}
+
         </div>
   )
 }
