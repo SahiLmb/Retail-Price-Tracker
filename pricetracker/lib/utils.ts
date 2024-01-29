@@ -1,14 +1,13 @@
 import { PriceHistoryItem, Product } from "@/types";
-// import { Notification } from "@/lib/nodemailer";
-// import { THRESHOLD_PERCENTAGE } from "@/lib/nodemailer";
 
+// from nodemailer/index.ts
 const Notification = {
   WELCOME: 'WELCOME',
   CHANGE_OF_STOCK: 'CHANGE_OF_STOCK',
   LOWEST_PRICE: 'LOWEST_PRICE',
   THRESHOLD_MET: 'THRESHOLD_MET',
 }
-
+// from nodemailer/index.ts
 const THRESHOLD_PERCENTAGE = 40;
 
 // Extracts and returns the price from a list of possible elements.
@@ -92,7 +91,7 @@ export function getAveragePrice(priceList: PriceHistoryItem[]) {
 
   return averagePrice;
 }
-/*
+
 export const getEmailNotifType = (
   scrapedProduct: Product,
   currentProduct: Product
@@ -110,7 +109,7 @@ export const getEmailNotifType = (
   }
 
   return null;
-}; */
+}; 
 
 export const formatNumber = (num: number = 0) => {
   return num.toLocaleString(undefined, {
