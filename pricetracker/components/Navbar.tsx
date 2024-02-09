@@ -19,7 +19,7 @@ const Navbar = () => {
           alt="logo"
         />
 
-        <p className="nav-logo">
+        <p className="CM-logo">
           Crawler<span className="text-primary">Mart</span>
           </p>
      </Link>
