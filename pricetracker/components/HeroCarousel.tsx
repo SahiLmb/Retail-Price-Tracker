@@ -5,20 +5,20 @@ import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
 
 const heroImages = [
-  { imgUrl: '/assets/images/hero-1.svg',alt: 'smartwatch'},
+  { imgUrl: '/assets/images/headp.webp',alt: 'Headphones'},
+  { imgUrl: '/assets/images/monitor1.jpg',alt: 'monitor'},
   { imgUrl: '/assets/images/hero-3.svg',alt: 'lamp'},
   { imgUrl: '/assets/images/hero-2.svg',alt: 'bag'},
   { imgUrl: '/assets/images/hero-5.svg',alt: 'chair'},
-  { imgUrl: '/assets/images/hero-4.svg',alt: 'air fryer'},
 ]
 const HeroCarousel = () => {
   return (
-    <div className="hero-carousel">
+    <div className="relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[#FFFFFF] rounded-[30px] sm:mx-auto">
        <Carousel
        showThumbs={false}
-       // autoplay
+       autoplay
        infiniteLoop
-       // interval={2000}
+       interval={2000}
        showArrows={false}
        showStatus={false}
        >
@@ -36,9 +36,9 @@ const HeroCarousel = () => {
               <Image
               src="assets/icons/hand-drawn-arrow.svg"
               alt="arrow"
-              width={175}
+              width={150}
               height={175}
-              className="max-xl:hidden absolute -left-[15%] bottom-0 z-0"
+              className="max-xl:hidden absolute -left-[20%] bottom-0 z-0"
               />
               </div>
   )

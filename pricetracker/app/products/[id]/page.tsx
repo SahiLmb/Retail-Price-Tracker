@@ -73,7 +73,6 @@ const ProductDetails = async ({ params : { id } }: Props) => {
             width={20}
             height={20}
           />
-
         </div>
         <div className="p-2 bg-white-200 rounded-10">
           <Image
@@ -82,6 +81,7 @@ const ProductDetails = async ({ params : { id } }: Props) => {
             width={20}
             height={20}
           />
+
         </div>
         </div>
         </div>
@@ -103,7 +103,7 @@ const ProductDetails = async ({ params : { id } }: Props) => {
                 height={16}
                 />
           <p className="text-sm text-primary-orange font-semibold">
-            {product.stars || '25'}
+            {product.stars || '4.1' || '3.9'}
           </p>
               </div>
 
