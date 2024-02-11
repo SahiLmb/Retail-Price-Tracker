@@ -8,11 +8,11 @@ import { scrapeAmazonProduct } from "@/lib/scraper";
 import { getAveragePrice, getEmailNotifType, getHighestPrice, getLowestPrice } from "@/lib/utils";
 
 
-export const maxDuration = 300;
-export const dynamic = 'force-dynamic'
+export const maxDuration = 5;
+export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 
-export async function GET() {
+export async function GET(request: Request) {
     try {
         connectToDB(); // connecting to db again
 
