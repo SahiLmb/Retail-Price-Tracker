@@ -14,11 +14,11 @@ const heroImages = [
 const HeroCarousel = () => {
   return (
     <div className="relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[#FFFFFF] rounded-[30px] sm:mx-auto">
-       <Carousel
+       <Carousel 
        showThumbs={false}
-       autoplay
+       autoPlay
        infiniteLoop
-       interval={2000}
+       interval={3000}
        showArrows={false}
        showStatus={false}
        >
