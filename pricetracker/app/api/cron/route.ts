@@ -50,8 +50,6 @@ export async function GET(request: Request) {
         );
 
         // ======================== 2 CHECK EACH PRODUCT'S STATUS & SEND EMAIL ACCORDINGLY
-        // By Status we can check whether the price has drop or the product is back in stock, according to the product status
-        //  send mail to the customer
         const emailNotifType = getEmailNotifType(
           scrapedProduct,
           currentProduct
