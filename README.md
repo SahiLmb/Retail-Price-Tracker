@@ -2,6 +2,12 @@
 <p align="center">
   <img width ="70%" src="pricetracker/public/Snapshots/CrawlerMart.png">
 </p>
+<div align="center">
+   <img src="https://img.shields.io/badge/-Web_Scraping-black?style=for-the-badge&logoColor=white&color=FF0000" alt="webscraping" />
+    <img src="https://img.shields.io/badge/-Next_JS-black?style=for-the-badge&logoColor=white&logo=nextdotjs&color=000000" alt="nextjs" />
+    <img src="https://img.shields.io/badge/-Tailwind_CSS-black?style=for-the-badge&logoColor=white&logo=tailwindcss&color=06B6D4" alt="tailwindcss" />
+    <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=47A248" alt="mongodb" />
+  </div>
 <h1 align="center">A web scraping tool used to extract the prices of various products from e-commerce websites like Amazon and display them in the range of Highest, Lowest, Average </h1>
 <br>
 
