@@ -47,7 +47,7 @@ Checkout [pricetracker](pricetracker/README.md) for the installation process.
 </p>
 <br>
 
-## Utlized [Nodemailer](https://nodemailer.com/smtp/) for sending mail to user's email address for tracking purpose.
+## Utilised [Nodemailer](https://nodemailer.com/smtp/) for sending mail to user's email address for tracking purpose.
 <p align="center">
   <img src="pricetracker/public/Snapshots/5.png" alt="sys-overview-gif" width="80%" />
 </p>
