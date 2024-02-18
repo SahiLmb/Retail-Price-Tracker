@@ -11,7 +11,7 @@
 <h1 align="center">A web scraping tool used to extract the prices of various products from e-commerce websites like Amazon and display them in the range of Highest, Lowest, Average </h1>
 <br>
 
-Checkout [pricetracker](pricetracker/README.md) for the installation process
+Checkout [pricetracker](pricetracker/README.md) for the installation process.
 
 
 
