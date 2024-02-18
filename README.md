@@ -41,7 +41,7 @@ Checkout [pricetracker](pricetracker/README.md) for the installation process.
 </p>
 <br>
 
-## User's gets a pop-up message regarding tracking of product price through email.
+## User gets a pop-up message regarding tracking of product price through email.
 <p align="center">
   <img src="pricetracker/public/Snapshots/4.png" alt="sys-overview-gif" width="80%" />
 </p>
