@@ -12,6 +12,7 @@ module.exports = {
           DEFAULT: "#E43030",
           "orange": "#D48D3B",
           "green": "#3E9242"
+          
         },
         secondary: "#282828",
         "gray-200": "#EAECF0",

@@ -11,27 +11,27 @@ const Home = async () => {
 
   return (
     <>
-    <section className="px-6 md:px-20 py-24">
+    <section className="px-6 md:px-2 ">
       <div className="flex max-xl:flex-col gap-16">
         <div className="flex flex-col justify-center">
-          <p className="small-text">
-            Smart Shopping Starts Right Here!
+          <p className="flex gap-2 text-s font-medium text-gray-600">
+            Shop Smart, Shop Right!
             <Image
-              src="/assets/icons/arrow-right.svg"
+              src="/assets/icons/check.svg"
               alt="arrow-right"
               width={16}
               height={16}
             />
           </p>
 
-          <h1 className="head-text">
-          Elevate Your Strategy with  
-            <span className="text-rose-600"> CrawlerMart</span>
+          <h1 className="mt-4 text-6xl leading-[72px] font-bold tracking-[-1.2px] text-gray-900">
+          Elevate Your Strategy with 
+            <span className="bg-gradient-to-t from-rose-300 via-rose-500 to-rose-800 inline-block text-transparent bg-clip-text">CrawlerMart</span>
             
           </h1>
 
-          <p className="mt-6">
-          Drive results with user-friendly analytics for your business.
+          <p className="mt-4 text-xl">
+          Unlock exclusive savings with personalized email alerts for every price drop!
           </p>
 
           <Searchbar />
