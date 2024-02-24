@@ -53,6 +53,18 @@ Checkout [pricetracker](pricetracker/README.md) for the installation process.
 </p>
 <br>
 
+## Below the product price has been dropped so it will notify the user who enabled tracking for this particular product.
+<p align="center">
+  <img src="pricetracker/public/Snapshots/10.png" alt="sys-overview-gif" width="80%" />
+</p>
+<br>
+
+## Discount mail is sent to the user
+<p align="center">
+  <img src="pricetracker/public/Snapshots/9.png" alt="sys-overview-gif" width="80%" />
+</p>
+<br>
+
 ### Future Scope?
 
 - Scraping Amazon Reviews.
