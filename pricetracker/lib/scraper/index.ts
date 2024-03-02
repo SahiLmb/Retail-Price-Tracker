@@ -6,9 +6,6 @@ export async function scrapeAmazonProduct(url:
     string) {
         if(!url) return;
 
-       /* curl --proxy brd.superproxy.io:22225 --proxy-user 
-        brd-customer-hl_d811e9fe-zone-unblocker:j6l42nb2am32 
-        -k https://lumtest.com/myip.json */
 
 
     // BrightData proxy Configuration
