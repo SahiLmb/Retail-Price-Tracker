@@ -20,6 +20,18 @@
     @apply py-4 px-4 bg-secondary hover:bg-opacity-70 rounded-[30px] text-white text-lg font-semibold;
   }
 
+  .head-text {
+    @apply mt-4 text-6xl leading-[72px] font-bold tracking-[-1.2px] text-gray-900;
+  }
+
+  .crawler-text {
+    @apply bg-gradient-to-t from-rose-300 via-rose-500 to-rose-800 inline-block text-transparent bg-clip-text
+  }
+
+  .trending-section {
+    @apply flex flex-col gap-10 px-6 md:px-20 py-24;
+  }
+
   .section-text {
     @apply text-secondary text-[32px] font-semibold;
   }
@@ -28,7 +40,11 @@
     @apply text-xl leading-[30px] text-gray-600;
   }
 
-  .carousel {
+  .hero-carousel {
+  @apply relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[#FFFFFF] rounded-[30px] sm:mx-auto
+  }
+  
+  /* .carousel {
     @apply flex flex-col-reverse h-[700px];
   }
 
@@ -42,11 +58,9 @@
 
   .carousel .control-dots .dot.selected {
     @apply bg-[#475467] !important;
-  }
+  } */
 
-  .trending-section {
-    @apply flex flex-col gap-10 px-6 md:px-20 py-24;
-  }
+
 
   /* PRODUCT DETAILS PAGE STYLES */
   .product-container {
@@ -98,6 +112,15 @@
     @apply px-5 py-3 text-white text-base font-semibold border border-secondary bg-secondary rounded-lg mt-8;
   }
 
+  /* NAVBAR */
+
+  .nav {
+    @apply flex justify-between items-center px-6 md:px-1 py-4
+  }
+
+  .nav-logo {
+    @apply font-spaceGrotesk text-[21px] text-secondary font-bold
+  }
 
   /* PRICE INFO */
   .price-info_card {

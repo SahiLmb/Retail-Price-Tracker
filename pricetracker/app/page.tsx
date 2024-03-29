@@ -24,9 +24,9 @@ const Home = async () => {
             />
           </p>
 
-          <h1 className="mt-4 text-6xl leading-[72px] font-bold tracking-[-1.2px] text-gray-900">
+          <h1 className="head-text">
           Elevate Your Strategy with 
-            <span className="bg-gradient-to-t from-rose-300 via-rose-500 to-rose-800 inline-block text-transparent bg-clip-text">CrawlerMart</span>
+            <span className="crawler-text">CrawlerMart</span>
             
           </h1>
 

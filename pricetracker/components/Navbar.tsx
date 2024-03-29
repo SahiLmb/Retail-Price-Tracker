@@ -9,7 +9,7 @@ const navIcons = [
 const Navbar = () => {
   return (
     <header className="w-full">
-      <nav className="flex justify-between items-center px-6 md:px-1 py-4">
+      <nav className="nav">
         <Link href="/" className="flex items-center gap-1">
         {/* <Image 
         src="/assets/icons/logo.jpeg"
@@ -18,7 +18,7 @@ const Navbar = () => {
           alt="logo"
         /> */}
 
-        <p className="font-spaceGrotesk text-[21px] text-secondary font-bold">
+        <p className="nav-logo">
           Crawler<span className="text-primary">Mart</span>
           </p>
      </Link>

@@ -13,7 +13,7 @@ const heroImages = [
 ]
 const HeroCarousel = () => {
   return (
-    <div className="relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] h-[700px] w-full bg-[#FFFFFF] rounded-[30px] sm:mx-auto">
+    <div className="hero-carousel">
        <Carousel 
        showThumbs={false}
        autoPlay
@@ -44,4 +44,4 @@ const HeroCarousel = () => {
   )
 }
 
-export default HeroCarousel
+export default HeroCarousel;
